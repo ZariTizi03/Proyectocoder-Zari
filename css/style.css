@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Frank+Ruhl+Libre:wght@300&family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/*----HEADER----*/
+header {
+    padding: 25px;
+    background-color:#5d576b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.zariSalud {
+    color: black;
+    background-color: #D3AC71;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listaNav{
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul li{
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #D3AC71;
+    list-style: none;
+    font-size: 18px;
+    padding: 5px;
+    transition: 4s;
+}
+header nav ul li:hover{
+background-color: black;
+}
+header nav ul li a {
+    color: #D3AC71;
+}
+
+/*------MAIN------*/
+/* .imgPrin {
+    width: 400px;
+    height: 300px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+/* } */
+.imgPrin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-style: italic;
+    font-family: 'Fredoka One', cursive;
+    font-weight:400;
+    font-size:45px;
+    position: relative;
+    left: 60px;
+}
+h2 {
+    color: #C78283;
+    position: relative;
+    left: 15px;
+}
+h3 {
+    color: #86A873;
+    position: relative;
+    left: 5px;
+}
+p {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    font-size: 18px;
+}  
+.parrafoImpor {
+    font-size: 25px;
+} 
+ul {
+    font-size: 20px;
+    font-family: 'Frank Ruhl Libre', serif;
+    position: relative;
+    left: 15px;
+}
+li {
+    list-style: square;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.letraGris {
+    background-color:#D3AC71;
+    color:#313638;
+    font-family: 'Amatic SC', cursive;
+    font-weight:800;
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+.footerLogos img {
+    width: 50px;
+    height: 50px;
+    /* display: flex;
+    justify-content:flex-end; */
+    /* align-items: center; */
+}
+.footerLogos {
+    display: flex;
+    justify-content:flex-end;
+    /* align-items: center; */
+}
+
+
+.imgTip { 
+    display: flex;
+}
+.imgTip img{
+    width: 300px;
+    height: 310px;
+}
+.imgTip div {
+    width: 700px;
+}
+
+
+.divProduc {
+    display: flex;
+}
+.divProduc img {
+    width: 250px;
+    height: 310px;
+}
+.divProduc div {
+    width: 800px;
+}
+
+
+.divEtiq {
+    display: flex; 
+}
+.divEtiq img {
+    width: 150px;
+    height: 290px;
+}
+.divEtiq div { 
+    width: 950px;
+}
+
+
+.sectionSol {
+    display: flex;
+}
+.sectionSol img {
+    width: 300px;
+    height: 350px;
+}
+.sectionSol div {
+    width: 900px;
+}
+
+
+.divAgua {
+    display: flex;
+}
+.divAgua img {
+    width: 350px;
+    height: 280px;
+}
+.divAgua div {
+    width: 990px;
+}
+
+
+.sectionExfo {
+    display: flex;
+}
+.sectionExfo img {
+    width: 300px;
+    height: 320px;
+}
+.sectionExfo div {
+    width: 900px;
+}
+
+
+.divAct {
+    display: flex;
+}
+.divAct img {
+    width: 300px;
+    height: 320px;
+}
+.divAct div {
+    width: 950px;
+}
+
+/**MEDIA QUERIES*/
+@media screen and (max-width: 820px) {
+    .listaNav {
+        flex-direction: column;
+        justify-content: flex-start;
+    } 
+    .zariSalud {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .divProduc {
+        flex-direction: column;
+    }
+    .divEtiq {
+        flex-direction: column;
+    }
+    p { 
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1165px) {
+    .sectionSol {
+        flex-direction: column;
+    }
+    .divAgua {
+        flex-direction: column;
+    }
+    .sectionExfo {
+        flex-direction: column;
+    }
+    .divAct {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .imgTip {
+        flex-direction: column;
+    }
+}
+/*--------FOOTER--------*/
